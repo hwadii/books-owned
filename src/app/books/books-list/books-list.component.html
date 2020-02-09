@@ -1,0 +1,10 @@
+<div style="flex: 1; flex-direction: row;">
+  <app-book-add></app-book-add>
+  <app-book-info></app-book-info>
+</div>
+<ul>
+  <li *ngFor="let book of books">
+    <strong>{{ book.title }}</strong>
+    <i>&nbsp;{{ book.author }}</i>
+  </li>
+</ul>
